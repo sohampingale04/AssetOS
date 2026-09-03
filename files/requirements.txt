@@ -1,0 +1,33 @@
+# ASSETOS Phase 5 – Requirements
+# Install with: pip install -r requirements.txt
+
+# Core
+numpy>=1.24
+pandas>=2.0
+scipy>=1.11
+
+# RL
+stable-baselines3[extra]>=2.2
+gymnasium>=0.29
+torch>=2.1
+
+# Data
+yfinance>=0.2.36
+
+# ML utilities
+scikit-learn>=1.3
+
+# Visualisation
+matplotlib>=3.7
+plotly>=5.18
+
+# Performance analytics
+quantstats>=0.0.62
+
+# Storage
+pyarrow>=14.0         # for parquet caching
+
+# Logging / progress
+tensorboard>=2.15
+tqdm>=4.66
+rich>=13.0            # optional prettier console output

@@ -1,0 +1,14 @@
+2026-09-02 22:16:48 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-09-02 22:16:48 [INFO] [33mPress CTRL+C to quit[0m
+2026-09-02 22:16:48 [INFO]  * Restarting with stat
+2026-09-02 22:16:50 [WARNING]  * Debugger is active!
+2026-09-02 22:16:50 [INFO]  * Debugger PIN: 153-096-102
+2026-09-02 22:18:37 [INFO] API Onboarding complete for: hahahahahahaha
+2026-09-02 22:18:37 [INFO] 127.0.0.1 - - [02/Sep/2026 22:18:37] "POST /api/onboard HTTP/1.1" 200 -
+2026-09-02 22:18:41 [ERROR] Data directory empty: NIFTY100_Sectors_Initial
+2026-09-02 22:18:41 [INFO] 127.0.0.1 - - [02/Sep/2026 22:18:41] "[35m[1mPOST /api/generate_portfolio HTTP/1.1[0m" 500 -
+2026-09-02 22:18:50 [ERROR] Data directory empty: NIFTY100_Sectors_Initial
+2026-09-02 22:18:50 [INFO] 127.0.0.1 - - [02/Sep/2026 22:18:50] "[35m[1mPOST /api/generate_portfolio HTTP/1.1[0m" 500 -
+2026-09-02 22:19:21 [ERROR] Data directory empty: NIFTY100_Sectors_Initial
+2026-09-02 22:19:21 [INFO] 127.0.0.1 - - [02/Sep/2026 22:19:21] "[35m[1mPOST /api/generate_portfolio HTTP/1.1[0m" 500 -

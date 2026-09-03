@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-elite-navy: var(--bg-primary);
+  --color-elite-charcoal: var(--bg-secondary);
+  --color-elite-gold: var(--accent-primary);
+  --color-elite-goldHover: var(--accent-secondary);
+  --color-elite-cream: var(--text-primary);
+  --color-elite-slate: var(--text-secondary);
+  --color-elite-border: var(--border-color);
+
+  --font-serif: Playfair Display, serif;
+  --font-sans: Inter, sans-serif;
+}
+
+
+
+:root {
+  /* Dark Mode (Default) */
+  --bg-primary: #0a192f;
+  --bg-secondary: #112240;
+  --accent-primary: #d4af37;
+  --accent-secondary: #b5952f;
+  --text-primary: #e6f1ff;
+  --text-secondary: #8892b0;
+  --border-color: #d4af37;
+}
+
+.light-mode {
+  /* Old Money / Swiss Bank Aesthetic */
+  --bg-primary: #F0EBE3;
+  /* User Requested: Soft Warm Beige v2 */
+  --bg-secondary: #FFFFFF;
+  /* Crisp White */
+  --accent-primary: #B48E43;
+  /* Antique Brass */
+  --accent-secondary: #8B6B2F;
+  /* Darker Brass */
+  --text-primary: #0F172A;
+  /* Oxford Navy */
+  --text-secondary: #334155;
+  /* Slate */
+  --border-color: #B48E43;
+  /* Antique Brass */
+}
+
+@layer base {
+  body {
+    @apply bg-elite-navy text-elite-slate font-sans antialiased transition-colors duration-300;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif text-elite-cream transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-elite-charcoal/90 backdrop-blur-md border border-elite-border/30 rounded-xl shadow-xl transition-all duration-300;
+  }
+
+  .gold-btn {
+    @apply px-6 py-3 bg-transparent border border-elite-gold text-elite-gold font-medium rounded-lg hover:bg-elite-gold/10 transition-all duration-300 uppercase tracking-wider text-sm;
+  }
+
+  .gold-btn-filled {
+    @apply px-6 py-3 bg-elite-gold text-elite-navy font-bold rounded-lg hover:bg-elite-goldHover transition-all duration-300 shadow-lg shadow-elite-gold/20 uppercase tracking-wider text-sm;
+  }
+
+  .input-field {
+    @apply w-full bg-elite-navy border border-elite-slate/30 text-elite-cream px-4 py-3 rounded-lg focus:outline-none focus:border-elite-gold focus:ring-1 focus:ring-elite-gold transition-all duration-300 placeholder-elite-slate/50;
+  }
+}
